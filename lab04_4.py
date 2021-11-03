@@ -34,7 +34,10 @@ def modinv(a):
     else:
         return x % M
 
+print("Text before")
+print(text)
 cipher = affine_encrypt(text, [3,5])
+print("Text after encryption")
 print(cipher)
-
+print("Text after decryption")
 print(affine_decrypt(cipher,[3,5]))
